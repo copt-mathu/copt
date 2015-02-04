@@ -1,0 +1,78 @@
+// This file is part of COPT, a light-weight C++ based optimization open source library
+//
+// Copyright (C) 2015 Ruimin Wang <ruimin.wang13@gmail.com>
+// Copyright (C) 2015 MathU
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+#ifndef COPT_CORE__
+#define COPT_CORE__
+
+#define CBLAS 1
+#define USE_UMFPACK
+
+/** standard libraries */
+#include <typeinfo>
+#include <iostream>
+#include <vector>
+#include <list>
+#include <set>
+#include <cmath>
+#include <random>
+#include <time.h>
+#include <iterator>
+#include <complex>
+#include <algorithm>
+#include <limits>
+#include <cassert>
+#include <iomanip>
+
+/** third party libraries */
+#include "ThirdParty/cblas.h"
+#include "ThirdParty/clapack.h"
+#include <umfpack.h>
+
+/** Base of COPT */
+#include "Base/BasicDefinition.hpp"
+#include "Base/Traits.hpp"
+#include "Base/COException.hpp"
+#include "Base/Object.hpp"
+#include "Base/CBlasWrapper.hpp"
+#include "Base/LapackWrapper.hpp"
+#include "Base/UMFPackWrapper.hpp"
+#include "Base/Size.hpp"
+#include "Base/Array.hpp"
+#include "Base/ArrayImpl.hpp"
+#include "Base/Vector.hpp"
+#include "Base/VectorImpl.hpp"
+#include "Base/Matrix.hpp"
+#include "Base/MatrixImpl.hpp"
+#include "Base/SpMatrix.hpp"
+#include "Base/SpMatrixImpl.hpp"
+#include "Base/ArithOperation.hpp"
+#include "Base/NumDifferential.hpp"
+#include "Base/Function.hpp"
+#include "Base/Solver.hpp"
+
+/** Linear Algorithms */
+#include "LinearAlgo/LinearSolver.hpp"
+#include "LinearAlgo/Eigenvalue.hpp"
+#include "LinearAlgo/LUSolver.hpp"
+#include "LinearAlgo/CholeskySolver.hpp"
+#include "LinearAlgo/QRSolver.hpp"
+#include "LinearAlgo/SVDSolver.hpp"
+
+
+#endif
