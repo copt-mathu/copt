@@ -4,7 +4,7 @@ include ../Makefile.in
 
 I = -I../include
 
-all: array vector
+all: array vector matrix solver
 
 array: bin/array
 	
