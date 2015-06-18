@@ -241,7 +241,7 @@ void iterationPrint(const ArgType& x, const Option& o, const Parameter& para, in
 		os<<std::fixed<<std::setw(8)<<para.IterNum<<"\t";
 		os<<std::setw(12)<<std::setprecision(4)<<std::scientific<<para.Object<<"\t";
 		os<<std::setw(12)<<para.Error<<std::endl;
-		os<<std::defaultfloat;
+		// os<<std::defaultfloat;
 	}
 }
 
